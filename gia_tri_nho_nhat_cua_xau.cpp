@@ -1,6 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+// tự làm
+// mảng a đếm tần suất của các chữ cái
+// cho vào hàng đợi ưu tiên( sẽ lấy phần tử lớn nhất ra)
+// để có gtri xâu nhỏ nhất,
+// n lần loại bỏ, mỗi lần loại bỏ ta sẽ bỏ đi 1 lần xuất hiện
+// của kí tự xuất hiện nhiều nhất tại thời điểm đó
+// ví dụ: 1 4 5 n = 3;
+// b1: 1 4 4 n = 2;
+// b2: 1 4 3 n = 1;
+// b3: 1 3 3 n = 0;
+// ta ko thực hiện 5 - 3 luôn nhé!, nếu thực hiện z ta có 1 4 2 = 21 > 1 3 3 = 19
 long long solve(string s, int n)
 {
     int a[26];
